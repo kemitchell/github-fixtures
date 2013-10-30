@@ -1,0 +1,24 @@
+{
+  "name": "github-fixtueres",
+  "version": "0.0.0",
+  "description": "github-fixtueres",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mozilla-b2g-bot/github-fixtueres.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/mozilla-b2g-bot/github-fixtueres/issues"
+  },
+  "dependencies": {
+    "object-factory": "0.1.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0"
+  }
+}
