@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mozilla-b2g-bot/github-fixtueres.git"
+    "url": "git://github.com/mozilla-b2g-bot/github-fixtures.git"
   },
   "author": "",
   "license": "Apache2",
   "bugs": {
-    "url": "https://github.com/mozilla-b2g-bot/github-fixtueres/issues"
+    "url": "https://github.com/mozilla-b2g-bot/github-fixtures/issues"
   },
   "dependencies": {
     "object-factory": "0.1.1"
