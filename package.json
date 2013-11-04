@@ -1,7 +1,7 @@
 {
-  "name": "github-fixtueres",
+  "name": "github-fixtures",
   "version": "0.0.1",
-  "description": "github-fixtures",
+  "description": "Github fixtures for tests",
   "main": "index.js",
   "scripts": {
     "test": "make test"
