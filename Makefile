@@ -2,7 +2,7 @@ VIEWER=./node_modules/.bin/object-factory-viewer
 
 .PHONY: test
 test: node_modules
-	./node_modules/.bin/mocha $(shell find . test -d 1 -type f -name "*_test.js")
+	./node_modules/.bin/mocha $(shell find . test -depth 1 -type f -name "*_test.js")
 	@echo
 	@echo "github_fixture/repo"
 	$(VIEWER) repo.js
