@@ -4,6 +4,14 @@ Github fixtures for shepherd tests.
 
 # Fixtures
 
+All fixtures are based on the [github api docs](http://developer.github.com/v3/)
+
+  - PullRequest
+  - PullRequestRef
+  - Repo
+  - User
+  - Link
+
 ```js
 var Repo = require('github-fixtures/repo');
     User = require('github-fixtures/user');

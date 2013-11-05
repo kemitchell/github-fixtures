@@ -1,1 +1,2 @@
 --ui tdd
+--require test/helper
