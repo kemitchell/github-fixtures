@@ -12,6 +12,9 @@ test: node_modules
 	@echo
 	@echo "github_fixture/pull_request"
 	$(VIEWER) pull_request.js
+	@echo
+	@echo "github_fixture/commit"
+	$(VIEWER) commit.js
 
 node_modules: package.json
 	npm install

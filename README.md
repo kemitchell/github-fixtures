@@ -6,6 +6,7 @@ Github fixtures for shepherd tests.
 
 All fixtures are based on the [github api docs](http://developer.github.com/v3/)
 
+  - Commit
   - PullRequest
   - PullRequestRef
   - Repo
@@ -15,7 +16,8 @@ All fixtures are based on the [github api docs](http://developer.github.com/v3/)
 ```js
 var Repo = require('github-fixtures/repo');
     User = require('github-fixtures/user');
-    PullRequest = require('github-fixtures/pull_request');
+    PullRequest = require('github-fixtures/pull_request'),
+    Commit = require('github-fixtures/commit');
 
 
 Repo.create({
