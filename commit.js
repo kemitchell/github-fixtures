@@ -8,8 +8,8 @@ function assign(object, key, value) {
 }
 
 function assignSha1Url(obj) {
-  assign(obj, 'sha1', hash());
-  assign(obj, 'url', BASE_URL + 'commits/' + obj.sha1);
+  assign(obj, 'sha', hash());
+  assign(obj, 'url', BASE_URL + 'commits/' + obj.sha);
 }
 
 /**
@@ -48,9 +48,9 @@ var CommitRef = new Factory({
 });
 
 /**
-Generate a sha1 which represents the github sha1.
+Generate a sha which represents the github sha.
 
-@return {String} sha1 of the current time.
+@return {String} sha of the current time.
 */
 function hash(value) {
   value = value || Date.now();
@@ -63,7 +63,7 @@ module.exports = new Factory({
   onbuild: function(obj) {
     assignSha1Url(obj);
 
-    obj.parents = obj.parents || [{ sha1: hash(Date.now() + 1000) }];
+    obj.parents = obj.parents || [{ sha: hash(Date.now() + 1000) }];
     obj.parents = obj.parents.map(function(item) {
       return CommitSha1Link.create(item);
     });
